@@ -15,7 +15,7 @@ function tocaSomPuff(){
 document.querySelector('.tecla_puff').onclick = tocaSomPuff;}
         
 function tocaSomSplash(){
-    document.querySelector('#som_tecla_splash').play();
+    document.querySelector('#som_tecla_splash').play();f
 document.querySelector('.tecla_splash').onclick = tocaSomSplash;}
 
 function tocaSomToim(){
@@ -38,13 +38,15 @@ document.querySelectorAll('.tecla');
  
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
-listaDeTeclas[0].onclick = tocaSomPom;
-listaDeTeclas[1].onclick = tocaSomClap;
-listaDeTeclas[2].onclick = tocaSomTim;
-listaDeTeclas[3].onclick = tocaSomPuff;
-listaDeTeclas[4].onclick = tocaSomSplash;
-listaDeTeclas[5].onclick = tocaSomToim;
-listaDeTeclas[6].onclick = tocaSomPsh;
-listaDeTeclas[7].onclick = tocaSomTic;
-listaDeTeclas[8].onclick = tocaSomTom;
 
+let contador = 0;
+
+// Estrutura de repetiçao - Enquanto
+while(contador < listaDeTeclas.length) {
+ listaDeTeclas[contador].onclick = tocaSomPom;
+
+ contador = contador + 1;
+
+ console.log(contador);
+
+}
