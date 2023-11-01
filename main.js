@@ -1,8 +1,8 @@
-function tocaSom(idElementoAudio)
+function tocaSom(idElementoAudio){
    const elemento = document.querySelector(idElementoAudio);
 if (elemento === null){
 alert('Elemento não encontrado')
-}
+}}
 const listaDeTeclas=document.querySelectorAll('.tecla');
 // Estrutura de repetiçao - Enquanto
 for(let contador = 0; contador < listaDeTeclas.length; contador++){
